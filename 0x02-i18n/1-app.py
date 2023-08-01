@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Basic Babel setup"""
-
+"""
+1. Basic Babel setup
+"""
 from flask import Flask, render_template
 from flask_babel import Babel
 
 app = Flask(__name__)
-babel = Babel(app)
+
+# Configuration for Babel
 
 
 class Config:
@@ -16,12 +18,19 @@ class Config:
 
 app.config.from_object(Config)
 
+babel = Babel(app)
+
 
 @app.route('/')
 def index():
-    """Renders the index.html template."""
+    """
+    Render the index page.
+
+    Returns:
+        str: The rendered HTML page.
+    """
     return render_template('1-index.html')
 
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
