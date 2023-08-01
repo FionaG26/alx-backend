@@ -222,4 +222,4 @@ Displaying the time in French looks like this:
 
 Displaying the time in English looks like this:
 
-![image](images/last_image_ 2.png)
+![image](images/last_image_2.png)
