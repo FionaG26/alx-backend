@@ -166,9 +166,6 @@ Visiting `http://127.0.0.1:5000/?login_as=2` in your browser should display this
 
 **Repo:**
 
-GitHub repository: `alx-backend`
-Directory: `0x02-i18n`
-File: `5-app.py`, `templates/5-index.html`
 
 ### 6. Use user locale (mandatory)
 
@@ -182,6 +179,8 @@ The order of priority should be:
 4. Default locale
 
 Test by logging in as different users.
+![image](images/last_image.png)
+
 
 **Repo:**
 
@@ -206,3 +205,21 @@ Before returning a URL-provided or user time zone, you must validate that it is 
 GitHub repository: `alx-backend`
 Directory: `0x02-i18n`
 File: `7-app.py`, `templates/7-index.html`
+
+## 8. Display the current time
+#advanced
+Based on the inferred time zone, display the current time on the home page in the default format. For example:
+
+Jan 21, 2020, 5:55:39 AM or 21 janv. 2020 à 05:56:28
+
+Use the following translations
+
+msgid	English	French
+current_time_is	"The current time is %(current_time)s."	"Nous sommes le %(current_time)s."
+Displaying the time in French looks like this:
+
+![image](images/last_image_1.png)
+
+Displaying the time in English looks like this:
+
+![image](images/last_image_ 2.png)
